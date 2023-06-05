@@ -1,0 +1,35 @@
+.warning_container{
+    background-color: white;
+    width:45vw;
+    height: 30vh;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.warning_header{
+    height: 20%;
+    box-sizing: border-box;
+    color: white;
+    padding: 0 10px;
+    background-color: rgb(126, 16, 106);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.warning_body{
+    padding: 10px;
+}
+.warning_button{
+    background-color: rgb(126,16,106);
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    left: 535px;
+    top: 35px;
+    border-radius: 10px;
+    padding: 10px;
+}

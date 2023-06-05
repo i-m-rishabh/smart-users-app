@@ -1,0 +1,14 @@
+.User_container {
+    
+    width: 70vw;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.User_container li {
+    list-style: none;
+}
