@@ -8,11 +8,11 @@ function App(){
   const [users, setUsers] = useState([]);
   const [isActive, setActive] = useState(true);
 
-  function addUser(name, age ){
+  function addUser(name, age, college ){
     setUsers((prev)=>{
       return [
         ...prev,
-        {id: Math.random() ,name: name, age: age}
+        {id: Math.random() ,name: name, age: age, college:college}
       ]
     })
   }

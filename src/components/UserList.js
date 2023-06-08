@@ -7,7 +7,7 @@ const UserList = (props) => {
             <ul>
             {
                 props.users.map((user)=>{
-                   return <User key={user.id} id={user.id} name={user.name} age={user.age} OnRemoveUser={props.OnRemoveUser}/>
+                   return <User key={user.id} id={user.id} name={user.name} age={user.age} college={user.college} OnRemoveUser={props.OnRemoveUser}/>
                     {/* console.log(user.id,user.name,user.age) */}
                 })
             }    

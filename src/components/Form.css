@@ -25,7 +25,8 @@ form{
     width: 40vw;    
 }
 label{
-    color: rgb(40,42,52);
+    /* color: rgb(40,42,52); */
+    color: white;
     margin-right: auto;
     padding: 2px;
     font-weight: bold;
