@@ -27,9 +27,9 @@
     background-color: rgb(126,16,106);
     width: 70px;
     display: inline-block;
-    position: relative;
-    left: 535px;
-    top: 35px;
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
     border-radius: 10px;
     padding: 10px;
 }

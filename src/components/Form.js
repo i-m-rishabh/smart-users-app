@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Form.css';
 import Warning from './Warning.js';
+import Backdrop from './Backdrop.js';
 
 const Form = (props) => {
     const [isValid, setIsValid] = useState(true);
@@ -11,18 +12,14 @@ const Form = (props) => {
     function formSubmitHandler(event) {
         event.preventDefault();
         if (name.trim().length === 0 || age.trim().length === 0) {
-            // alert('please enter all the details');
             setErrorMessage('Please enter all the details');
             setIsValid(false);
-            props.onModalActive(false);
         } else {
             if (age < 0) {
-                // alert('age can not be in negative');
                 setErrorMessage('age can not be negative');
                 setIsValid(false);
-                props.onModalActive(false);
             } else {
-                props.OnAddUser(name, parseInt(age), isValid);
+                props.OnAddUser(name, parseInt(age));
                 setName('');
                 setAge('');
             }
@@ -34,12 +31,11 @@ const Form = (props) => {
     }
 
     function handleAgeChange(event) {
-        isValid &&setAge(event.target.value);
+        setAge(event.target.value);
     }
 
-    function handleConfirm(){
+    function handleConfirm() {
         setIsValid(true);
-        props.onModalActive(true);
     }
     return (
         <div className='container'>
@@ -51,7 +47,10 @@ const Form = (props) => {
                 <button type="submit">Add User</button>
             </form>
             {
-                !isValid && <Warning message={errorMessage} OnConfirm={handleConfirm}/>
+                !isValid && <>
+                    <Backdrop />
+                    <Warning message={errorMessage} OnConfirm={handleConfirm} />
+                </>
             }
         </div>
     )

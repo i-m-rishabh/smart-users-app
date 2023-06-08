@@ -22,13 +22,13 @@ function App(){
     })
     setUsers(filteredUsers);
   }
-  function modalActive(isActive){
-    setActive(isActive);
-  }
+  // function modalActive(isActive){
+  //   setActive(isActive);
+  // }
   return(
     <>
-      <Form OnAddUser={addUser} onModalActive={modalActive}/>
-      {isActive && <UserList users={users} OnRemoveUser={removeUser}/>}
+      <Form OnAddUser={addUser} />
+      <UserList users={users} OnRemoveUser={removeUser}/>
     </>
   )
 }

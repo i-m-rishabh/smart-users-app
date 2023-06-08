@@ -1,6 +1,6 @@
 .UserList_container{
-    /* background-color: white;
-    height: 50vh;
-    width: 70vw;
-    margin: auto; */
+   background-color: rgb(40,42,52);
+   height: 50vh;
+   overflow: auto;
+   
 }
