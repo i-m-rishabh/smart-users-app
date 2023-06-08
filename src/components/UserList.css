@@ -2,5 +2,23 @@
    background-color: rgb(40,42,52);
    height: 50vh;
    overflow: auto;
-   
+   /* scrollbar-width: thin;
+   scrollbar-color: transparent; */
+}
+.UserList_container::-webkit-scrollbar{
+   background-color: rgba(0,0,0);
+   border-radius: 10px;
+   /* border: 2px solid white; */
+}
+.UserList_container::-webkit-scrollbar-thumb{
+   background-color: rgba(0,0,0,0.5);
+   border-radius: 10px;
+   border: 1px solid white;
+
+}
+.UserList_container::-webkit-scrollbar-track{
+   background-color: rgb(40,42,52,0.7);
+   border: 2px solid white;
+
+   border-radius: 10px;
 }
